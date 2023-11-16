@@ -1,0 +1,17 @@
+snowsql_config_path = "~/.snowsql/config"
+snowsql_connection_name = "dev"
+
+[default]
+input_parameters = "INTEGER"  # The input type should match the Python function's argument type
+return_type = "VARCHAR"      # The return type should match the Python function's return type
+file = "app.zip"
+name = "month_to_season_udf"
+handler = "app.main"
+execute_as_caller = true
+
+[dev]
+database = "A4_DB"
+schema = "CALENDAR_DATA"
+warehouse = "A4_WH"
+role = "A4_ROLE"
+overwrite = true

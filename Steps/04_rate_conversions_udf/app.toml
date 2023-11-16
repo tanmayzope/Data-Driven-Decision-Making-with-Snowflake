@@ -1,0 +1,17 @@
+snowsql_config_path = "~/.snowsql/config"
+snowsql_connection_name = "dev"
+
+[default]
+input_parameters = "float, float"  # The input type should match the Python function's argument type
+return_type = "float"              # The return type should match the Python function's return type
+file = "app.zip"
+name = "rate_conversions_udf"
+handler = "app.main"
+execute_as_caller = true
+
+[dev]
+database = "A4_DB"
+schema = "AMAZON_AND_ECOMMERCE_WEBSITES_PRODUCT_VIEWS_AND_PURCHASES"
+warehouse = "A4_WH"
+role = "A4_ROLE"
+overwrite = true
