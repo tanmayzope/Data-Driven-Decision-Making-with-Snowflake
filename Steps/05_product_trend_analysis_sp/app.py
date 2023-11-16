@@ -38,8 +38,6 @@ def product_seasonality_and_trend_analysis(session: Session):
     trend_analysis = analyze_trends(session, product_sales)
     return trend_analysis
 
-
-
 # main function to encapsulate the process logic
 def main(session: Session) -> None:
     trend_analysis_results = product_seasonality_and_trend_analysis(session)
@@ -47,18 +45,16 @@ def main(session: Session) -> None:
     trend_analysis_results.show()
 
 if __name__ == '__main__':
-    import sys
-    from pathlib import Path
+    import os, sys
+    current_dir = os.path.dirname(os.path.abspath(__file__))
 
-    # Define the absolute path to the 'utils' directory
-    utils_dir = Path(__file__).resolve().parents[1] / 'utils'  # Adjust the number of parents according to the actual location
-    sys.path.append(str(utils_dir))
+    # Navigate up two levels to the root of your project, where the `utils` directory is located
+    root_dir = os.path.dirname(os.path.dirname(current_dir))
 
-    # Now, try importing the snowpark_utils module
-    try:
-        from utils import snowpark_utils
-    except ImportError as e:
-        raise ImportError(f"The snowpark_utils module could not be imported from {utils_dir}. Make sure it is available in the parent directory.") from e
+    # Add the root directory to the sys.path
+    sys.path.append(root_dir)
+
+    from myproject_utils import snowpark_utils
 
     # Get the Snowpark session using the utility function provided
     session = snowpark_utils.get_snowpark_session()
