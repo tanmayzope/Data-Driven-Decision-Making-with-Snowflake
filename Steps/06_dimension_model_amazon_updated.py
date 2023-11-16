@@ -129,7 +129,39 @@ def create_fact_table(session, schema_name):
     """).collect()
 
 
-# Main function to orchestrate table creation and data insertion
+
+    # Additional code to integrate calendar data from dataset 2 into the date_dimension
+    # Assuming the date_dimension table already has Date_ID, Month_Number, and Year_Number
+    session.sql(f"""
+        ALTER TABLE {schema_name}.date_dimension
+        ADD IF NOT EXISTS Day_Name VARCHAR(16777215),
+        ADD IF NOT EXISTS Week_Number INTEGER,
+        ADD IF NOT EXISTS Quarter_Number INTEGER
+    """).collect()
+
+    # This is a placeholder for the actual insert statement, you would need to tailor this to your data
+    session.sql(f"""
+        INSERT INTO {schema_name}.date_dimension (Month_Number, Year_Number, Day_Name, Week_Number, Quarter_Number)
+        SELECT DISTINCT MONTH(DATE), YEAR(DATE), DAYNAME, WEEKOFYEAR, QUARTER
+        FROM CALENDAR_DATA_WITH_DATE_DIMENSIONS__FREE_READY_TO_USE.PUBLIC.CALENDAR_DATA
+        WHERE DATE IS NOT NULL
+        ON DUPLICATE KEY UPDATE
+            Day_Name = VALUES(Day_Name),
+            Week_Number = VALUES(Week_Number),
+            Quarter_Number = VALUES(Quarter_Number)
+    """).collect()
+
+    # Additional code to integrate sales data from dataset 3 into the fact_sales
+    # This assumes that dataset 3 contains a reference to the date and product that can be joined with the existing dimension tables
+    session.sql(f"""
+        ALTER TABLE {schema_name}.fact_sales
+        ADD IF NOT EXISTS Weekly_Estimated_Revenue FLOAT,
+        ADD IF NOT EXISTS Weekly_Estimated_Sales INTEGER
+    """).collect()
+
+    # Placeholder for the actual insert statement for integrating dataset 3 into fact_sales
+    # ...
+
 def main(session, *args):
     schema_name = "PRODUCT_VIEWS_AND_PURCHASES_DIM_MODEL"
     print(create_schema(session, schema_name))   
