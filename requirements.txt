@@ -8,9 +8,7 @@ executing==2.0.0
 fastjsonschema==2.18.1
 filelock==3.12.4
 
-idna==3.4
-ipykernel==6.25.2
-ipython==8.16.1
+
 
 json5==0.9.14
 jsonpointer==2.4
