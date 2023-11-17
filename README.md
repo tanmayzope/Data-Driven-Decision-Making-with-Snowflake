@@ -35,6 +35,35 @@ Tanmay Zope [GitHub repository link](https://github.com/tanmayzope/sfguide-data-
 ### Tech Stack
 Python | Snowflake | Streamlit | GCP | LangChain
 
+### Repo Structure
+```
+.
+├── LICENSE
+├── README.md
+├── Steps
+│   ├── 01_setup_snowflake.sql
+│   ├── 02_load_data.sql
+│   ├── 03_month_to_season_udf
+│   ├── 04_rate_conversions_udf
+│   ├── 05_product_trend_analysis_sp
+│   ├── 06_dimension_model_amazon.py
+│   ├── 07_DataTransformation.py
+│   └── 08_teardown_script.sql
+├── Streamlit
+│   ├── app.py
+│   └── requirements.txt
+├── Views
+│   └── views.sql
+├── config
+├── environment.yml
+├── myproject_utils
+│   ├── __init__.py
+│   └── snowpark_utils.py
+├── oryx-build-commands.txt
+└── requirements.txt
+```
+
+
 ### Contributions
 | Name | Cotribution |
 |----------|----------|
