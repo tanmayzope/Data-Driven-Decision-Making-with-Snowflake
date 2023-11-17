@@ -65,7 +65,7 @@ Python | Snowflake | Streamlit | GCP | LangChain
 
 
 ### Contributions
-| Name | Cotribution |
+| Name | Contribution |
 |----------|----------|
 | Soham | Replication, UDFs, Stored Procedure, SQL Process, Snowflake Config, Codespace Deployment |
 | Tanmay | Replication, Streamlit, Langchain, SQL Process, Tech Doc, Theme Selection |
