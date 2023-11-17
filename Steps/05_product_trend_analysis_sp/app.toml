@@ -1,0 +1,17 @@
+snowsql_config_path = "~/.snowsql/config"
+snowsql_connection_name = "dev"
+
+[default]
+input_parameters = "()" #change things here
+return_type = "string" #change things here
+file = "app.zip"
+name = "product_trend_anaysis_sp"
+handler = "app.main"
+execute_as_caller = true
+
+[dev]
+database = "A4_DB"
+schema = "HARMONIZED" #change things here
+warehouse = "A4_WH"
+role = "A4_ROLE"
+overwrite = true
