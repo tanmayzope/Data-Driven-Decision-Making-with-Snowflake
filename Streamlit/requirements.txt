@@ -1,0 +1,9 @@
+streamlit
+snowflake-connector-python
+sqlalchemy
+snowflake-sqlalchemy
+langchain
+langchain-experimental
+openai
+python-dotenv
+pyarrow>=10.0.1,<10.1.0
