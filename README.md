@@ -12,7 +12,7 @@ Welcome to the E-commerce Insights Platform! In this project, we're leveraging S
 
 Anvi Jain [GitHub repository link](https://github.com/jainanv/sfguide-data-engineering-with-snowpark-python-anvi)
 Soham Deshpande [GitHub repository link](https://github.com/SohamD148/sfguide-data-engineering-with-snowpark-python)
-Tanmay Zope [GitHub repository link]()
+Tanmay Zope [GitHub repository link](https://github.com/tanmayzope/sfguide-data-engineering-with-snowpark-python)
 
 ### Part B
 
@@ -29,18 +29,18 @@ Tanmay Zope [GitHub repository link]()
    3. Calendar Data with Date Dimensions [link](https://app.snowflake.com/marketplace/listing/GZSUZCCDD/infocepts-calendar-data-with-date-dimensions-free-ready-to-use)
 
 ### Project Resources
-* Google codelab link [link]()
-* Project Demo - [link]()
-### Steps to Replicate
-steps
+* [Codelab](https://codelabs-preview.appspot.com/?file_id=1w7wjX9IvupqjPWn8kvJ18s-AhFWQPPdK70WeTuZzC5E#0)
+* Project Demo - [YouTube Demo]()
+
 ### Tech Stack
 Python | Snowflake | Streamlit | GCP | LangChain
+
 ### Contributions
 | Name | Cotribution |
 |----------|----------|
-| Soham | Row 1, Col 2 |
-| Tanmay | Row 2, Col 2 |
-| Anvi | Row 3, Col 2 |
+| Soham | Replication, UDFs, Stored Procedure, SQL Process, Snowflake Config, Codespace Deployment |
+| Tanmay | Replication, Streamlit, Langchain, SQL Process, Tech Doc, Theme Selection |
+| Anvi | Replication, Tech Document, Research |
 
 
 ### Additional Notes
