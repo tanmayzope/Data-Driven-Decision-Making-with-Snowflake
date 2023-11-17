@@ -1,6 +1,6 @@
 streamlit
 snowflake-connector-python
-sqlalchemy
+sqlalchemy<2.0
 snowflake-sqlalchemy
 langchain
 langchain-experimental
