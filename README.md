@@ -30,7 +30,7 @@ Tanmay Zope [GitHub repository link](https://github.com/tanmayzope/sfguide-data-
 
 ### Project Resources
 * [Codelab](https://codelabs-preview.appspot.com/?file_id=1w7wjX9IvupqjPWn8kvJ18s-AhFWQPPdK70WeTuZzC5E#0)
-* Project Demo - [YouTube Demo]()
+* Project Demo - [YouTube Demo](https://youtu.be/ntNEQ7fpLYg)
 
 ### Tech Stack
 Python | Snowflake | Streamlit | GCP | LangChain
