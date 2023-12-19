@@ -6,16 +6,6 @@ Welcome to the E-commerce Insights Platform! In this project, we're leveraging S
 
 ## Project Overview
 
-### Part A
-
-#### **Reproduction of Steps: Data Engineering Pipelines with Snowpark Python**
-
-Anvi Jain [GitHub repository link](https://github.com/jainanv/sfguide-data-engineering-with-snowpark-python-anvi)
-Soham Deshpande [GitHub repository link](https://github.com/SohamD148/sfguide-data-engineering-with-snowpark-python)
-Tanmay Zope [GitHub repository link](https://github.com/tanmayzope/sfguide-data-engineering-with-snowpark-python)
-
-### Part B
-
 #### **Thematic Story Development**
 
    #### Data Selection - Snowflake Marketplace
@@ -62,14 +52,6 @@ Python | Snowflake | Streamlit | GCP | LangChain
 ├── oryx-build-commands.txt
 └── requirements.txt
 ```
-
-
-### Contributions
-| Name | Contribution |
-|----------|----------|
-| Soham | Replication, UDFs, Stored Procedure, SQL Process, Snowflake Config, Codespace Deployment |
-| Tanmay | Replication, Streamlit, Langchain, SQL Process, Tech Doc, Theme Selection |
-| Anvi | Replication, Tech Document, Use Case, Research|
 
 
 ### Additional Notes
